@@ -226,9 +226,6 @@ const validateAccount = async (account) => {
   }
 });*/
 
-// funcao tratamento de erro
-router.use((err, req, res, next) => {
-  res.status(400).send({ error: err.message });
-});
+
 
 export default router;
